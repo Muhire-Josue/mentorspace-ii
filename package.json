@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text mocha --require babel-register --timeout 10000 --exit  ./tests/*",
+    "test": "nyc --reporter=html --reporter=text mocha --require babel-register --timeout 1000 --exit  ./tests/*",
     "start": "nodemon app.js"
   },
   "repository": {

@@ -1,9 +1,9 @@
 import User from '../model/user';
-import Session from '../model/session';
+// import Session from '../model/session';
 import jwt from 'jsonwebtoken';
 import hash from 'bcrypt-nodejs';
 import userSchema from '../controller/validation/userValidation';
-import sessionSchema from '../controller/validation/sessionValidation'
+// import sessionSchema from '../controller/validation/sessionValidation'
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -15,6 +15,7 @@ class userController {
   static signUp(req, res) {
     const { email, firstname, lastname, password, address, status, bio, occupation, expertise } = req.body;
     const DuplicateUser = User.find(u => u.email === req.body.email);
+    
     if (!DuplicateUser) {
       req.body.id = User.length + 1;
       const id = req.body.id;
