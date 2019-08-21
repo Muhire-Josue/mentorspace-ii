@@ -1,0 +1,41 @@
+{
+  "name": "mentorspace-ii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "nyc --reporter=html --reporter=text mocha --require babel-register --timeout 10000 --exit  ./tests/*",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muhire-Josue/mentorspace-ii.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muhire-Josue/mentorspace-ii/issues"
+  },
+  "homepage": "https://github.com/Muhire-Josue/mentorspace-ii#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "bcrypt": "^3.0.6",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1"
+  },
+  "devDependencies": {
+    "@babel/register": "^7.5.5",
+    "bcrypt-nodejs": "0.0.3",
+    "eslint": "^6.2.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
